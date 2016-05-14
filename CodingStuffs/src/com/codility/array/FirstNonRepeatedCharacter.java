@@ -3,7 +3,7 @@ package com.codility.array;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FirstRepeatedCharacter {
+public class FirstNonRepeatedCharacter {
 	public static void main(String[] args) {
 		String str = "pankanpjil";
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
@@ -16,7 +16,7 @@ public class FirstRepeatedCharacter {
 		}
 
 		for (int i = 0; i < str.length(); i++) {
-			if (map.get(str.charAt(i)) == 1) {
+			if (map.get(str.charAt(i)) >= 1) {
 				System.out.println("Answer is:" + str.charAt(i));
 				break;
 			}
