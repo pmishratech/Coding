@@ -1,4 +1,4 @@
-package com.codility;
+package com.codility.matrix;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

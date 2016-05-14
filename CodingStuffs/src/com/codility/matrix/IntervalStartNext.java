@@ -1,4 +1,4 @@
-package com.codility;
+package com.codility.matrix;
 
 import java.util.Collections;
 import java.util.Comparator;

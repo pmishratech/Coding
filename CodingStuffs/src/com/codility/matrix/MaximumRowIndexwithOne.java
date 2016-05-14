@@ -1,4 +1,4 @@
-package com.codility;
+package com.codility.matrix;
 
 public class MaximumRowIndexwithOne {
 

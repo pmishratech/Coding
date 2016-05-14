@@ -1,4 +1,4 @@
-package com.codility;
+package com.codility.thread;
 class ProducerConsumerQueue {
 	public static void main(String[] args) {
 		SharedQueue c = new SharedQueue();
