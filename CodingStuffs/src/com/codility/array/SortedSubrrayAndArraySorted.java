@@ -1,6 +1,6 @@
-package com.codility;
+package com.codility.array;
 
-public class Test {
+public class SortedSubrrayAndArraySorted {
 
 	public static void main(String[] args) {
 		printUnsorted();
