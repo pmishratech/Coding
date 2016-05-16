@@ -2,51 +2,24 @@ package com.codility;
 
 public class Test {
 
-	public static void main(String[] args) {
-		printUnsorted();
+	public static void main(String... args) {
+		int[] arr = { 3,4,7,1,2,9,8};
+		pairSumEqualInArray(arr);
 	}
 
-	private static void printUnsorted() {
-		int[] arr = { 10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60 };
-		int s = 0, e = arr.length - 1, max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
-
-		for (int i = 0; i < arr.length - 1; i++) {
-			if (arr[i] > arr[i + 1]) {
-				s = i;
-				break;
+	private static void pairSumEqualInArray(int[] arr) {
+		int sum=0;
+		for (int i = 1; i < arr.length; i++) {
+			for (int j = 1; j < arr.length; j++) {
+				if(sum==(arr[i]+arr[j])){
+					System.out.println(arr[i]+","+arr[j]);
+				}
+				else{
+					sum= arr[i]+arr[j];
+				}
+				
 			}
+			
 		}
-
-		for (int i = arr.length - 1; i > 0; i--) {
-			if (arr[i] < arr[i - 1]) {
-				e = i;
-				break;
-			}
-		}
-
-		for (int i = s; i <= e; i++) {
-			if (arr[i] > max) {
-				max = arr[i];
-			} else if (arr[i] < min) {
-				min = arr[i];
-			}
-		}
-
-		for (int i = 0; i < s; i++) {
-			if (arr[i] > min) {
-				s = i;
-				break;
-			}
-		}
-
-		for (int i = arr.length - 1; i >= e; i--) {
-			if (arr[i] < max) {
-				e = i;
-				break;
-			}
-		}
-
-		System.out.println("Indexes are :" + s + " nd " + e);
 	}
-
 }
